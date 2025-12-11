@@ -7,6 +7,8 @@
 **Ma version simplifiée :**
 ```java
 public static boolean estPositif(int n) {
+    return n > 0;
+    
     
 }
 ```
@@ -20,6 +22,7 @@ public static boolean estPositif(int n) {
 **Ma version simplifiée :**
 ```java
 public static int valeurAbsolue(int n) {
+    return n < 0 ? -n : n;
     
 }
 ```
@@ -33,6 +36,7 @@ public static int valeurAbsolue(int n) {
 **Ma version simplifiée :**
 ```java
 public static boolean estPair(int n) {
+    return n % 2 == 0;
     
 }
 ```
@@ -46,7 +50,7 @@ public static boolean estPair(int n) {
 **Ma version simplifiée :**
 ```java
 public static int max(int a, int b) {
-    
+    return a > b ? a : b;
 }
 ```
 
@@ -59,6 +63,9 @@ public static int max(int a, int b) {
 **Ma version simplifiée :**
 ```java
 public static String signe(int n) {
+     if (n > 0) return "positif";
+    if (n < 0) return "negatif";
+    return "zero";
     
 }
 ```
